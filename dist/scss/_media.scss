@@ -1,0 +1,127 @@
+
+@media screen and (max-width :375px) {
+    //media styles for radio checked
+       .radio {
+           padding: 15px;
+           border-top: 1px solid lightgrey;
+           display: flex;
+           flex-direction: column;
+           margin-top: 15px;
+           text-align: center;
+           justify-content: center;
+           align-items: center;
+
+           &_box {
+               margin-top: 15px;
+               display: flex;
+           }
+
+           &_box-one {
+               padding: 6px 15px 6px 15px;
+               background-color: #fff;
+               border-radius: 13px;
+               border: 1px solid lightgray;
+               margin-right: 15px;
+           }
+
+           &_box-two {
+               padding: 6px 15px 6px 15px;
+               background-color: #3cb4ac;
+               color: #fff;
+               border-radius: 13px;
+           }
+       }
+    //end of media styles of radio checked
+
+    .box {
+        visibility: hidden;
+    }
+  
+
+    //hamburger mobile view
+   
+    .closeicon {
+        position: absolute;
+        right: 5px;
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+
+        & > div {
+            border-bottom: 1px solid grey;
+            padding: 10px 0px 17px 10px;
+            margin-top: 6px;
+        }
+
+        &.open {
+            visibility: hidden;
+        }
+
+        #get {
+            border-bottom: none;
+        }
+    }
+
+
+    .header_flex_bold {
+        position: absolute;
+        left: 15px;
+    }
+
+    .body_third_bamboo-flex {
+        display: flex;
+        flex-direction: column;
+
+        &-text {
+            font-size: 13px;
+        }
+
+        &-color {
+            font-size: 12px;
+            margin-right: 12px;
+        }
+        
+    }
+
+    .body_third_about-head {
+        font-size: 15px;
+    }
+
+    .body_third_about-middle {
+        font-size: 12px;
+    }
+
+    .body_first_light {
+        font-size: 12px;
+    }
+
+    .body_third_bamboo-flextwo {
+        display: grid;
+        grid-template-columns: 30px 10px;
+        grid-template-rows: 40px 50px;
+
+        &-color {
+            font-size: 13px;
+            width: 130px;
+            line-height: normal;
+            height: 33px;
+        }
+    }
+}
+
+
+   //end of hamburger mobile view
+@media screen and (min-width:375px) {
+    
+    .flat {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .box1 {
+        visibility: hidden;
+    }
+   .menu_btn {
+       visibility: hidden;
+   }
+}

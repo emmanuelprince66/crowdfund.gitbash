@@ -1,0 +1,58 @@
+@media screen and (max-width:375px) {
+     #divBox {
+         visibility: hidden;
+     }
+
+     .dips {
+         visibility: visible;
+        position: absolute;
+        right: 34px;
+        bottom:7px ;
+     }
+
+     .body_first {
+        max-width:270px;
+        position: relative;
+     }
+
+     .body_first_flex-style {
+         position: absolute;
+         left: 15px;
+         bottom: 10px;
+     }
+//mobile style for the body_second
+
+  .body_sec_flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+  }
+  .body_sec {
+      height: 380px;
+  }
+
+  #borderleft {
+      height: 1px;
+      width: 45px;
+      background-color: grey;
+      position: absolute;
+      top: 679px;
+  }
+
+  #borderleftone {
+    height: 1px;
+    width: 45px;
+    background-color: grey;
+    position: absolute;
+    top: 585px;
+  } 
+
+  .body_sec_progress { 
+     margin-right: 30px;
+     
+    
+  }
+
+}

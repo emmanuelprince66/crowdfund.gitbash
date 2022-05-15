@@ -1,0 +1,51 @@
+.body_first {
+    max-height: 250px;
+    height: 230px;
+    padding: 10px;
+    text-align: center;
+    margin:-55px auto 10px auto;
+    @include bg_color;
+    @include m_width;
+
+    &_image {
+        margin-top: -40px;
+        margin-bottom: 13px;
+    }
+
+    &_bold {
+        margin-bottom: 17px;
+        @include text_bold;
+    }
+
+    &_light {
+        margin-bottom: 40px;
+        @include text_small;
+    }
+
+    &_flex {
+        display: flex;
+        justify-content: space-around;
+
+        &-style {
+            background: hsl(176, 50%, 47%);
+            padding:10px 28px 5px 28px;
+            border-radius: 20px;
+            height: 40px;
+            color: set-text-color($secondary-color);
+
+        }
+
+        &-bookmark {
+            display: flex;
+            width: 150px;
+            height: 40px;
+            background:lightgray;
+            border-radius: 20px;
+        }
+
+    }
+}
+      .text {
+            align-self: center;
+            margin-left: 15px;
+        }

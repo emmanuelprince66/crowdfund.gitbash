@@ -1,0 +1,6 @@
+.bodytwo {
+    max-height:200px;
+    @include m_width;
+    @include bg_color;
+    margin: 10px auto 10px auto;
+}

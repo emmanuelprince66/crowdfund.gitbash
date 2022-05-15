@@ -1,0 +1,64 @@
+$secondary-color:#000;
+$primary-color:#fff;
+
+@mixin bg_color {
+    background-color: $primary-color;
+}
+
+@mixin transistion-ease {
+    transition: all 0.8s ease-in-out;
+}
+
+@function set-text-color ($color) {
+    @if (lightness($color) > 40%) {
+        @return $secondary-color;
+    }
+    @else {
+        @return $primary-color;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* starting for javascript style*/
+
+.bookcolor { 
+   color:hsl(176, 72%, 28%);
+}
+
+.cursor {
+    cursor: pointer;
+}
+/* end for javascript style */
+
+@mixin m_width {
+    max-width: 60vw;
+    border-radius: 10px; 
+}
+
+@mixin text_bold {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@mixin text_small {
+    color: hsl(0, 0%, 48%);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color:whitesmoke;
+    font-size: 16px;
+    font-family: 'Commissioner', sans-serif;
+    overflow: scroll;
+    position: relative;
+
+}
+
+section {
+    margin-bottom: 200px;
+}
